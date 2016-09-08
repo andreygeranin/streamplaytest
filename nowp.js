@@ -139,8 +139,7 @@
 
 
         var title = "Vk - " + songTitle;
-
-        return {
+return {
             song: songTitle,
             title: title
         };
