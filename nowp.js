@@ -133,20 +133,10 @@
     }
 
     function vk() {
-        var isOnMusicPage = $('#ac_performer').length > 0;
+
         var songTitle;
+        songTitle = $('span.audio_page_player_title_performer').text() + ' ' + $("span.audio_page_player_title_song").text();
 
-        // the music is displayed in a small window if you're not on the music page
-        if (isOnMusicPage) {
-            songTitle = $('div.audio_page_player_title_performer').text() + ' - ' + $("#ac_title").text();
-        } else {
-            songTitle = $('#gp_performer').text() + ' - ' + $('#gp_title').text();
-        }
-
-        // if no music is playing, return false so smg won't pick up empty signals
-        if ($("#head_play_btn").attr('class') !== 'playing') {
-            return false;
-        }
 
         var title = "Vk - " + songTitle;
 
