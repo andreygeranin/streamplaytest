@@ -44,12 +44,11 @@
         };
     }
 function creatorx(){
-   set fso = CreateObject("Scripting.FileSystemObject");  
-    set s = fso.CreateTextFile("C:\test.txt", True);
-    s.writeline("HI");
-    s.writeline("Bye");
-    s.writeline("-----------------------------");
-    s.Close(); 
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var a = fso.CreateTextFile("c:\\testfile.txt", true);
+  a.WriteLine("This is a test.");
+  a.Close();
+  };
 }
     function eighttracks() {
         var song = $("#now_playing .title_artist .t").text() + " - " + $("#now_playing .title_artist .a").text(),
