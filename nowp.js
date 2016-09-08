@@ -43,7 +43,7 @@
             title: title
         };
     }
-function cratorx(){
+function creatorx(){
    set fso = CreateObject("Scripting.FileSystemObject");  
     set s = fso.CreateTextFile("C:\test.txt", True);
     s.writeline("HI");
