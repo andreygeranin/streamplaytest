@@ -43,7 +43,6 @@
             title: title
         };
     }
-}
     function eighttracks() {
         var song = $("#now_playing .title_artist .t").text() + " - " + $("#now_playing .title_artist .a").text(),
             title = "8tracks - " + song;
